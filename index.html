@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="CodeXShot — personal portfolio, projects, skills and contact.">
+  <title>CodeXShot | Personal Portfolio</title>
+  <style>
+    :root{--bg:#090d18;--panel:#111827;--panel2:#151f32;--text:#edf2ff;--muted:#a4b0c7;--accent:#6ee7f9;--accent2:#a78bfa;--line:#263249;--shadow:0 20px 60px #0005}
+    [data-theme="light"]{--bg:#f5f7fc;--panel:#fff;--panel2:#edf1fa;--text:#121a2b;--muted:#59677f;--accent:#087f9b;--accent2:#7048d8;--line:#dce3f0;--shadow:0 20px 60px #26324918}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#30235a55,transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:-.7px;font-size:1.25rem}.brand span{color:var(--accent)}.links{display:flex;gap:25px;align-items:center;color:var(--muted);font-size:.94rem}.links a:hover{color:var(--accent)}button,.btn{border:0;border-radius:12px;padding:11px 16px;background:linear-gradient(110deg,var(--accent),var(--accent2));color:#07101d;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}.ghost{background:var(--panel);border:1px solid var(--line);color:var(--text)}.menu{display:none}
+    .hero{padding:100px 0 82px;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center;min-height:570px}.eyebrow{color:var(--accent);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}.hero h1{font-size:clamp(2.8rem,7vw,5.3rem);line-height:1.04;letter-spacing:-3px;margin:16px 0}.gradient{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.1rem;color:var(--muted);max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.orb{aspect-ratio:1;border-radius:32px;background:linear-gradient(145deg,#1c2c48,#17132e);border:1px solid #ffffff20;box-shadow:var(--shadow);display:grid;place-items:center;position:relative;overflow:hidden}.orb:before,.orb:after{content:"";position:absolute;border:1px solid #8be9ff55;border-radius:50%;width:75%;aspect-ratio:1}.orb:after{width:52%;border-color:#b69cff88}.monogram{font-size:clamp(4rem,10vw,7rem);font-weight:950;letter-spacing:-10px;background:linear-gradient(130deg,#7df0ff,#b69cff);color:transparent;background-clip:text;z-index:1}
+    section{padding:72px 0}.section-head{margin-bottom:30px}.section-head h2{font-size:2.1rem;letter-spacing:-1px;margin:5px 0}.section-head p,.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}.card h3{margin:8px 0}.icon{font-size:1.7rem}.tag{display:inline-block;padding:5px 10px;border-radius:99px;background:var(--panel2);color:var(--accent);font-size:.78rem;margin:4px 4px 0 0}.project{display:flex;flex-direction:column;min-height:220px}.project .bottom{margin-top:auto;padding-top:20px;color:var(--accent);font-weight:700}.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{background:var(--panel);border:1px solid var(--line);padding:10px 15px;border-radius:12px;color:var(--muted)}.about{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}.field{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit;margin:6px 0 14px}.footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:.9rem}.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{padding:9px 12px;border:1px solid var(--line);border-radius:10px;color:var(--muted)}.socials a:hover{color:var(--accent);border-color:var(--accent)}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:70px 0 50px}.orb{max-width:330px;width:100%;margin:auto}.grid{grid-template-columns:1fr 1fr}.about,.contact-grid{grid-template-columns:1fr}.links{display:none;position:absolute;top:72px;left:0;right:0;padding:20px 4%;background:var(--panel);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:inline-flex}}
+    @media(max-width:540px){.grid{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}.navin{height:64px}.links{top:64px}section{padding:55px 0}}
+  </style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+  <a class="brand" href="#home">Code<span>X</span>Shot</a>
+  <nav class="links" id="navLinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <div style="display:flex;gap:9px"><button class="ghost" id="themeBtn" aria-label="Toggle theme">☼</button><button class="menu" id="menuBtn" aria-label="Open menu">☰</button></div>
+</div></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div><div class="eyebrow">WELCOME TO MY CORNER OF THE WEB</div>
+      <h1>Hey, I'm <span class="gradient">Your Name.</span><br> I build things<br>for the web.</h1>
+      <p>I'm the person behind CodeXShot — curious about technology, creativity and turning ideas into digital experiences.</p>
+      <div class="actions"><a class="btn" href="#projects">Explore my work ↗</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+    </div>
+    <div class="orb" aria-label="CodeXShot graphic"><div class="monogram">CX</div></div>
+  </div>
+  <section id="about"><div class="wrap"><div class="section-head"><div class="eyebrow">A LITTLE INTRO</div><h2>About me</h2><p>A quick introduction to the person behind the pixels.</p></div>
+    <div class="about"><div class="card"><h3>Who am I?</h3><p class="muted">Hi! I'm <strong>Your Name</strong>. I enjoy learning, experimenting and making useful things. This website is my space to share what I'm working on and what inspires me.</p></div><div class="card"><h3>What I'm focused on</h3><p class="muted">Learning new skills, building creative projects, solving problems and connecting with people who enjoy making things too.</p></div></div>
+  </div></section>
+  <section id="skills"><div class="wrap"><div class="section-head"><div class="eyebrow">WHAT I USE</div><h2>Skills & interests</h2><p>Replace these with the tools and topics you know.</p></div>
+    <div class="skills"><span class="skill">HTML & CSS</span><span class="skill">JavaScript</span><span class="skill">Web Design</span><span class="skill">Creative Ideas</span><span class="skill">Problem Solving</span><span class="skill">Learning</span></div>
+  </div></section>
+  <section id="projects"><div class="wrap"><div class="section-head"><div class="eyebrow">MADE WITH CURIOSITY</div><h2>Featured projects</h2><p>A few things I've made or want to make.</p></div>
+    <div class="grid">
+      <article class="card project"><div class="icon">✦</div><h3>Project One</h3><p class="muted">A short description of your first project. Explain what it does and what you learned.</p><div class="bottom">View project ↗</div></article>
+      <article class="card project"><div class="icon">⌘</div><h3>Project Two</h3><p class="muted">Add another project here. You can link this card to a live demo or source code.</p><div class="bottom">View project ↗</div></article>
+      <article class="card project"><div class="icon">⚡</div><h3>Project Three</h3><p class="muted">Showcase something you're proud of, even if it's a small experiment.</p><div class="bottom">View project ↗</div></article>
+    </div>
+  </div></section>
+  <section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">LET'S CONNECT</div><h2>Say hello</h2><p>Send a message or find me on your social platforms.</p></div>
+    <div class="contact-grid"><div class="card"><h3>Find me online</h3><p class="muted">Add your public profile links below. Only share details you're comfortable making public.</p><div class="socials"><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://youtube.com/" target="_blank" rel="noreferrer">YouTube ↗</a></div></div>
+      <form class="card" id="contactForm"><label for="sender">Your name</label><input class="field" id="sender" required placeholder="Name"><label for="message">Message</label><textarea class="field" id="message" rows="4" required placeholder="Write a message..."></textarea><button type="submit">Prepare email ↗</button><p class="muted" id="formNote" aria-live="polite">This opens your email app; add your email address in the code first.</p></form>
+    </div>
+  </div></section>
+</main>
+<footer class="footer"><div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span>© <span id="year"></span> CodeXShot. Built with curiosity.</span><a href="#home">Back to top ↑</a></div></footer>
+<script>
+  const root=document.documentElement;
+  document.getElementById('themeBtn').addEventListener('click',()=>{const light=root.getAttribute('data-theme')==='light';root.setAttribute('data-theme',light?'dark':'light');document.getElementById('themeBtn').textContent=light?'☼':'☾';});
+  document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+  document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const email='YOUR_EMAIL@example.com';if(email==='YOUR_EMAIL@example.com'){document.getElementById('formNote').textContent='To activate this form, replace YOUR_EMAIL@example.com in index.html with your email address.';return;}const name=document.getElementById('sender').value;const msg=document.getElementById('message').value;location.href=`mailto:${email}?subject=${encodeURIComponent('Message from '+name)}&body=${encodeURIComponent(msg)}`;});
+</script>
+</body></html>
